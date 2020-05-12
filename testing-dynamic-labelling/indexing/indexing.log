@@ -1,0 +1,90 @@
+Started
+[Thu Apr 23 23:18:56 UTC 2020] Starting branch indexing...
+Using strategy: Default
+[poll] Last Built Revision: Revision 8d82e3391e13f140e4e1e4a2ff9d73796ebda6d4 (origin/simple-example)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 9 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/simple-example is: 8d82e3391e13f140e4e1e4a2ff9d73796ebda6d4 - already built by 19
+Using strategy: Default
+[poll] Last Built Revision: Revision 8d82e3391e13f140e4e1e4a2ff9d73796ebda6d4 (origin/simple-example)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 9 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/simple-example is: 8d82e3391e13f140e4e1e4a2ff9d73796ebda6d4 - already built by 19
+No changes detected: Simple (still at jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@939d1dd2)
+Using strategy: Default
+[poll] Last Built Revision: Revision be055cc1637fd2d69073d65962b89129037bcdc0 (origin/simple-parallel-example)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 9 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/simple-parallel-example is: b6dfeb91eb9dd062ad647440cfc71e2824007e0d
+Using strategy: Default
+[poll] Last Built Revision: Revision be055cc1637fd2d69073d65962b89129037bcdc0 (origin/simple-parallel-example)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 9 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/simple-parallel-example is: b6dfeb91eb9dd062ad647440cfc71e2824007e0d
+Changes detected: Simple Parallel (null → jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@b54cc0b5)
+Scheduled build for branch: Simple Parallel
+Using strategy: Default
+[poll] Last Built Revision: Revision b37767b1920d5b2f6bfbdc092183c44c1e4f3a7d (origin/nested-example)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 9 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/nested-example is: b37767b1920d5b2f6bfbdc092183c44c1e4f3a7d - already built by 37
+Using strategy: Default
+[poll] Last Built Revision: Revision b37767b1920d5b2f6bfbdc092183c44c1e4f3a7d (origin/nested-example)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 9 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/nested-example is: b37767b1920d5b2f6bfbdc092183c44c1e4f3a7d - already built by 37
+Using strategy: Default
+[poll] Last Built Revision: Revision b37767b1920d5b2f6bfbdc092183c44c1e4f3a7d (origin/nested-example)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 9 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/nested-example is: b37767b1920d5b2f6bfbdc092183c44c1e4f3a7d - already built by 37
+No changes detected: Nested (still at jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@8adf4d17)
+Using strategy: Default
+[poll] Last Built Revision: Revision 8a965b7e2b334baf50c0d67cdad4aec0b91577f3 (origin/scripted-example)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 9 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/scripted-example is: 8a965b7e2b334baf50c0d67cdad4aec0b91577f3 - already built by 7
+No changes detected: Scripted (still at jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@eb8f3aca)
+Using strategy: Default
+[poll] Last Built Revision: Revision 290a88c66e5629bb81906be8fee6dc8a573709da (origin/scripted-no-def-example)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 9 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/scripted-no-def-example is: 290a88c66e5629bb81906be8fee6dc8a573709da - already built by 7
+No changes detected: Scripted (no def) (still at jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@48eb7b31)
+Using strategy: Default
+[poll] Last Built Revision: Revision 8b88712c1b9a8867d350f47d18091e9fd21ea02a (origin/nested-failing-example)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 9 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/nested-failing-example is: 8b88712c1b9a8867d350f47d18091e9fd21ea02a - already built by 4
+Using strategy: Default
+[poll] Last Built Revision: Revision 8b88712c1b9a8867d350f47d18091e9fd21ea02a (origin/nested-failing-example)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 9 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/nested-failing-example is: 8b88712c1b9a8867d350f47d18091e9fd21ea02a - already built by 4
+No changes detected: Nested (Failing) (still at jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@ca6d7924)
+[Thu Apr 23 23:19:00 UTC 2020] Finished branch indexing. Indexing took 4.4 sec
+Evaluating orphaned items in testing-dynamic-labelling
+Will remove Simple Concurrent
+Finished: SUCCESS

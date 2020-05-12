@@ -1,0 +1,34 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>local-anka-cloud-label-ssh-cache-builder</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>echo &quot;cat on testfile...&quot;;
+cat testfile || true;
+echo &quot;creating testfile&quot;;
+echo &quot;Successful cat! (these are the contents)&quot; &gt; testfile
+hostname;
+env
+env | grep TESTING;</command>
+      <unstableReturn>1</unstableReturn>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <com.veertu.plugin.anka.AnkaSaveImagePostBuildStep plugin="anka-build@2.0.0-SNAPSHOT">
+      <shouldFail>true</shouldFail>
+      <timeoutMinutes>120</timeoutMinutes>
+    </com.veertu.plugin.anka.AnkaSaveImagePostBuildStep>
+  </publishers>
+  <buildWrappers/>
+</project>
