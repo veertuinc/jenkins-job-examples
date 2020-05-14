@@ -1,0 +1,59 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building remotely on [8mha:////4HkZK9iBEamblwesWY+HXj+vqyUbPNATexZKcOE7yq5WAAAAxh+LCAAAAAAAAP9djbENwjAURD9BMAAlomEAkwZBgSgQDUhAwwQf58tJ+Pm2HBvBGqwBDUMwDjsQiYpcc6fT093zA73awziPWW1loq3Ulmmytxnx5ubIcyHngw0EP3USgKuHUYv/Q2fLx2t5d+8Eki30mcSEfAfd6DnAYFfiBVNGMekx+ELMopkbtubWP2//uibMA6xSbSsXA/m0MlXYo6ChTLHVyArljEqzjU2BJ2JVCjulUeekTrHgjLyafgHzTp3+9gAAAA==[0mmgmtManaged-local-anka-cloud-label-jnlp-cache-builder-4 (local-anka-cloud-label-jnlp-cache-builder) in workspace /Users/anka/workspace/testing-static-slave-templates-JNLP-cache-builder
+[testing-static-slave-templates-JNLP-cache-builder] $ /bin/sh -xe /var/folders/cj/qrhh776s35z11k4y4k50jkgc0000gn/T/jenkins8767964290954398505.sh
++ echo 'cat on testfile...'
+cat on testfile...
++ cat testfile
+cat: testfile: No such file or directory
++ true
++ echo 'creating testfile'
+creating testfile
++ echo 'Successful cat! (these are the contents)'
++ hostname
+Mac-mini.local
++ env
+JAVA_MAIN_CLASS_2943=hudson.remoting.Launcher
+BUILD_URL=http://anka.jenkins:8092/job/testing-static-slave-templates-JNLP-cache-builder/2/
+HUDSON_SERVER_COOKIE=aa0bc819b4ced49c
+SHELL=/bin/bash
+TMPDIR=/var/folders/cj/qrhh776s35z11k4y4k50jkgc0000gn/T/
+SSH_CLIENT=192.168.64.1 64734 22
+BUILD_TAG=jenkins-testing-static-slave-templates-JNLP-cache-builder-2
+WORKSPACE=/Users/anka/workspace/testing-static-slave-templates-JNLP-cache-builder
+JOB_URL=http://anka.jenkins:8092/job/testing-static-slave-templates-JNLP-cache-builder/
+RUN_CHANGES_DISPLAY_URL=http://anka.jenkins:8092/job/testing-static-slave-templates-JNLP-cache-builder/2/display/redirect?page=changes
+com.apple.java.jvmTask=CommandLine
+USER=anka
+__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
+JENKINS_HOME=/var/jenkins_home
+PATH=/usr/bin:/bin:/usr/sbin:/sbin
+RUN_DISPLAY_URL=http://anka.jenkins:8092/job/testing-static-slave-templates-JNLP-cache-builder/2/display/redirect
+PWD=/Users/anka/workspace/testing-static-slave-templates-JNLP-cache-builder
+HUDSON_URL=http://anka.jenkins:8092/
+JOB_NAME=testing-static-slave-templates-JNLP-cache-builder
+BUILD_DISPLAY_NAME=#2
+JENKINS_URL=http://anka.jenkins:8092/
+BUILD_ID=2
+JOB_BASE_NAME=testing-static-slave-templates-JNLP-cache-builder
+SHLVL=2
+HOME=/Users/anka
+EXECUTOR_NUMBER=0
+JENKINS_SERVER_COOKIE=aa0bc819b4ced49c
+WORKSPACE_TMP=/Users/anka/workspace/testing-static-slave-templates-JNLP-cache-builder@tmp
+NODE_LABELS=local-anka-cloud-label-jnlp-cache-builder mgmtManaged-local-anka-cloud-label-jnlp-cache-builder-4
+LOGNAME=anka
+SSH_CONNECTION=192.168.64.1 64734 192.168.64.19 22
+HUDSON_HOME=/var/jenkins_home
+NODE_NAME=mgmtManaged-local-anka-cloud-label-jnlp-cache-builder-4
+JOB_DISPLAY_URL=http://anka.jenkins:8092/job/testing-static-slave-templates-JNLP-cache-builder/display/redirect
+BUILD_NUMBER=2
+HUDSON_COOKIE=012e6620-db80-466c-848a-2621cfb9a22d
+JAVA_ARCH=x86_64
+TESTING=true
+_=/usr/bin/env
++ env
++ grep TESTING
+TESTING=true
+Checking save image status...Done!
+Finished: SUCCESS
