@@ -1,0 +1,6 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.scm.impl.SingleSCMSource_-SCMRevisionImpl plugin="scm-api@2.6.3">
+  <head>
+    <name>Scripted</name>
+  </head>
+</jenkins.scm.impl.SingleSCMSource_-SCMRevisionImpl>
