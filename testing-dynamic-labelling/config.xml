@@ -81,7 +81,7 @@
       <jenkins.branch.BranchSource>
         <source class="jenkins.scm.impl.SingleSCMSource" plugin="scm-api@2.6.3">
           <id>b4ff5b8e-ab4c-4309-92ae-47b64ef97a83</id>
-          <name>Nested</name>
+          <name>Nested + Cache Builder</name>
           <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
             <configVersion>2</configVersion>
             <userRemoteConfigs>
@@ -91,7 +91,7 @@
             </userRemoteConfigs>
             <branches>
               <hudson.plugins.git.BranchSpec>
-                <name>nested-example</name>
+                <name>nested-cache-builder-example</name>
               </hudson.plugins.git.BranchSpec>
             </branches>
             <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
@@ -156,7 +156,7 @@
       <jenkins.branch.BranchSource>
         <source class="jenkins.scm.impl.SingleSCMSource" plugin="scm-api@2.6.3">
           <id>3630f80a-12ec-4b7b-80e9-fee60a7f72f0</id>
-          <name>Nested (Failing)</name>
+          <name>Nested + Cache Builder (Failing)</name>
           <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
             <configVersion>2</configVersion>
             <userRemoteConfigs>
@@ -166,7 +166,7 @@
             </userRemoteConfigs>
             <branches>
               <hudson.plugins.git.BranchSpec>
-                <name>nested-failing-example</name>
+                <name>nested-cache-builder-failing-example</name>
               </hudson.plugins.git.BranchSpec>
             </branches>
             <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
