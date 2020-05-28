@@ -1,0 +1,12 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building remotely on [8mha:////4MxUwx91kFHtaCEYq53V9evNPOgqNHdzDfEAkk3r0OfEAAAAvB+LCAAAAAAAAP9djb0NwjAUhB9BMAAloqGjcSwoaFAqGpASGiZ4OJYT8mJb/kGwBmtAwxCMww5EoiLX3On06e75gZF3MK9i6Y1OhdHekEwLU0ra3ax0VOvmYIKEnwYJwNXBrMf/oevs8cru9p1AsocxSa1ClcMwOgowyc94QU6oFT8GV2u16eamvbntz/u/tguLACsuTGtjkI63qg0FalSyZGQEEkPdIBNkYlfgSRLzvmLLL6lM8c/nAAAA[0mmgmtManaged-local-anka-cloud-label-ssh-1 (local-anka-cloud-label-ssh) in workspace /Users/anka/workspace/testing-static-slave-templates-SSH
+[testing-static-slave-templates-SSH] $ /bin/sh -xe /var/folders/vx/z58q_w392wq17f33z6hq9f9r0000gn/T/jenkins729671489102715325.sh
++ echo test
+test
++ hostname
+Mac-mini.local
++ env
++ grep TESTING
+TESTING=true
+Finished: SUCCESS
