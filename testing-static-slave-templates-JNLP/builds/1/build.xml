@@ -10,14 +10,14 @@
       </causeBag>
     </hudson.model.CauseAction>
   </actions>
-  <queueId>27</queueId>
-  <timestamp>1590698228017</timestamp>
-  <startTime>1590698228065</startTime>
+  <queueId>13</queueId>
+  <timestamp>1591819889038</timestamp>
+  <startTime>1591819889126</startTime>
   <result>SUCCESS</result>
-  <duration>10721</duration>
+  <duration>13906</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
-  <builtOn>local-anka-cloud-label-jnlp_x6XHdEU5WUIpmb1i</builtOn>
+  <builtOn>local-anka-cloud-label-jnlp_r0NAT</builtOn>
   <workspace>/Users/anka/workspace/testing-static-slave-templates-JNLP</workspace>
   <hudsonVersion>2.238</hudsonVersion>
   <scm class="hudson.scm.NullChangeLogParser"/>

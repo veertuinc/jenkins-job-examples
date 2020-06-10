@@ -1,0 +1,35 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.4">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.80">
+    <parentIds>
+      <string>30</string>
+    </parentIds>
+    <id>31</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.ExecutorStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.80">
+      <arguments>
+        <entry>
+          <string>label</string>
+          <string>ad45aaca-39f0-4149-a49f-57977ed102a2</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1591816300970</startTime>
+    </wf.a.TimingAction>
+    <org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl plugin="workflow-durable-task-step@2.35">
+      <id>8</id>
+    </org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl>
+    <s.a.WorkspaceActionImpl>
+      <node>nested-failing-example-nested_mbCZu</node>
+      <path>/Users/anka/workspace/ng_Nested_Cache_Builder_Failing_</path>
+      <labels class="sorted-set">
+        <hudson.model.labels.LabelAtom>ad45aaca-39f0-4149-a49f-57977ed102a2</hudson.model.labels.LabelAtom>
+      </labels>
+    </s.a.WorkspaceActionImpl>
+  </actions>
+</Tag>

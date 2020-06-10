@@ -10,14 +10,14 @@
       </causeBag>
     </hudson.model.CauseAction>
   </actions>
-  <queueId>26</queueId>
-  <timestamp>1590698183052</timestamp>
-  <startTime>1590698183092</startTime>
+  <queueId>12</queueId>
+  <timestamp>1591819907706</timestamp>
+  <startTime>1591819907804</startTime>
   <result>SUCCESS</result>
-  <duration>6850</duration>
+  <duration>9639</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
-  <builtOn>mgmtManaged-local-anka-cloud-label-ssh-1</builtOn>
+  <builtOn>local-anka-cloud-label-ssh_biMdh</builtOn>
   <workspace>/Users/anka/workspace/testing-static-slave-templates-SSH</workspace>
   <hudsonVersion>2.238</hudsonVersion>
   <scm class="hudson.scm.NullChangeLogParser"/>

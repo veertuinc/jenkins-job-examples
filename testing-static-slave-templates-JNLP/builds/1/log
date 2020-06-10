@@ -1,7 +1,7 @@
 Started by user unknown or anonymous
 Running as SYSTEM
-Building remotely on [8mha:////4Ijycrqs2mDgESXK4VG8RZPf7Tu/2UxEM2p8nWwJtHfNAAAAwh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAydEgYz/eT83ILSktQi/Zz85MQc3cS87ETd5Jz80hTdnMSk1BzdrLycgvgKswiPFNdQ0/BQz4LcJMNMAEzJeOPrAAAA[0mlocal-anka-cloud-label-jnlp_x6XHdEU5WUIpmb1i (local-anka-cloud-label-jnlp) in workspace /Users/anka/workspace/testing-static-slave-templates-JNLP
-[testing-static-slave-templates-JNLP] $ /bin/sh -xe /var/folders/vx/z58q_w392wq17f33z6hq9f9r0000gn/T/jenkins2757437350077303756.sh
+Building remotely on [8mha:////4AS8S6SEHoh3IL+Re/i6JmI58pXAa2zy7O/t+JcPrI+VAAAAtx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzFEgZt/eT83ILSktQi/Zz85MQc3cS87ETd5Jz80hTdnMSk1BzdrLycgvgiAz/HEABg/3LU4AAAAA==[0mlocal-anka-cloud-label-jnlp_r0NAT (local-anka-cloud-label-jnlp) in workspace /Users/anka/workspace/testing-static-slave-templates-JNLP
+[testing-static-slave-templates-JNLP] $ /bin/sh -xe /var/folders/vx/z58q_w392wq17f33z6hq9f9r0000gn/T/jenkins9084051727696414208.sh
 + echo test
 test
 + hostname

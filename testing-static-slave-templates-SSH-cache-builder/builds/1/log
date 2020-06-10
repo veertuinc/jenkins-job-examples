@@ -1,0 +1,59 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building remotely on [8mha:////4Kg6bJ0PW8uUK9XtYIvpvIhUSLZxEZlMpGeYyLSr2l1qAAAAwR+LCAAAAAAAAP9djb0NwjAUhB9BMAAlomEAxx1CQimABqSEhgGQsZ+SkBc78g+CNVgDGoZgHHYgUipyzV3x6bvXF0bOwrwIyhkdS6OdIYwzo5B29wYtlbo6GI/QZRAB3CzMevwfukie7+TRfCKI9jAm1LkvUhgGSx4m6UVcBSehc370ttT5qtVNe7pt1/3fph2xhyWXpm6CR8vJSEFM6EowSSYoRuKMxJwrmBSyQHYOJSm0J7vJ1vUP/fqQwe0AAAA=[0mlocal-anka-cloud-label-ssh-cache-builder_rBMAm (local-anka-cloud-label-ssh-cache-builder) in workspace /Users/anka/workspace/testing-static-slave-templates-SSH-cache-builder
+[testing-static-slave-templates-SSH-cache-builder] $ /bin/sh -xe /var/folders/vx/z58q_w392wq17f33z6hq9f9r0000gn/T/jenkins2152239368231873385.sh
++ echo 'cat on testfile...'
+cat on testfile...
++ cat testfile
+cat: testfile: No such file or directory
++ true
++ echo 'creating testfile'
+creating testfile
++ echo 'Successful cat! (these are the contents)'
++ hostname
+Mac-mini.local
++ env
+BUILD_URL=http://anka.jenkins:8092/job/testing-static-slave-templates-SSH-cache-builder/1/
+HUDSON_SERVER_COOKIE=ed06460054b4526d
+SHELL=/bin/bash
+TMPDIR=/var/folders/vx/z58q_w392wq17f33z6hq9f9r0000gn/T/
+SSH_CLIENT=192.168.64.1 53084 22
+BUILD_TAG=jenkins-testing-static-slave-templates-SSH-cache-builder-1
+WORKSPACE=/Users/anka/workspace/testing-static-slave-templates-SSH-cache-builder
+JOB_URL=http://anka.jenkins:8092/job/testing-static-slave-templates-SSH-cache-builder/
+RUN_CHANGES_DISPLAY_URL=http://anka.jenkins:8092/job/testing-static-slave-templates-SSH-cache-builder/1/display/redirect?page=changes
+com.apple.java.jvmTask=CommandLine
+USER=anka
+__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
+JENKINS_HOME=/var/jenkins_home
+PATH=/usr/bin:/bin:/usr/sbin:/sbin
+RUN_DISPLAY_URL=http://anka.jenkins:8092/job/testing-static-slave-templates-SSH-cache-builder/1/display/redirect
+PWD=/Users/anka/workspace/testing-static-slave-templates-SSH-cache-builder
+HUDSON_URL=http://anka.jenkins:8092/
+JAVA_MAIN_CLASS_2749=hudson.remoting.Launcher
+JOB_NAME=testing-static-slave-templates-SSH-cache-builder
+BUILD_DISPLAY_NAME=#1
+JENKINS_URL=http://anka.jenkins:8092/
+BUILD_ID=1
+JOB_BASE_NAME=testing-static-slave-templates-SSH-cache-builder
+SHLVL=2
+HOME=/Users/anka
+EXECUTOR_NUMBER=0
+JENKINS_SERVER_COOKIE=ed06460054b4526d
+WORKSPACE_TMP=/Users/anka/workspace/testing-static-slave-templates-SSH-cache-builder@tmp
+NODE_LABELS=local-anka-cloud-label-ssh-cache-builder local-anka-cloud-label-ssh-cache-builder_rBMAm
+LOGNAME=anka
+SSH_CONNECTION=192.168.64.1 53084 192.168.64.2 22
+HUDSON_HOME=/var/jenkins_home
+NODE_NAME=local-anka-cloud-label-ssh-cache-builder_rBMAm
+JOB_DISPLAY_URL=http://anka.jenkins:8092/job/testing-static-slave-templates-SSH-cache-builder/display/redirect
+BUILD_NUMBER=1
+HUDSON_COOKIE=fcd2ee7f-f1f3-412d-b7d7-a461bf3a8f5d
+JAVA_ARCH=x86_64
+TESTING=true
+_=/usr/bin/env
++ env
++ grep TESTING
+TESTING=true
+Checking save image status...Done!
+Finished: SUCCESS
