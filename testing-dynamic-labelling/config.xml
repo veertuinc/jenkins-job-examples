@@ -2,24 +2,19 @@
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@2.21">
   <actions/>
   <description>Example pipeline scripts for using jenkins anka build plugin with dynamic labels</description>
-  <properties>
-    <org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig plugin="docker-workflow@1.23">
-      <dockerLabel></dockerLabel>
-      <registry plugin="docker-commons@1.16"/>
-    </org.jenkinsci.plugins.docker.workflow.declarative.FolderConfig>
-  </properties>
+  <properties/>
   <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.5.6">
     <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
   </folderViews>
   <healthMetrics>
-    <com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric plugin="cloudbees-folder@6.12">
+    <com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric plugin="cloudbees-folder@6.14">
       <nonRecursive>false</nonRecursive>
     </com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
   </healthMetrics>
   <icon class="jenkins.branch.MetadataActionFolderIcon" plugin="branch-api@2.5.6">
     <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
   </icon>
-  <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@6.12">
+  <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder@6.14">
     <pruneDeadBranches>true</pruneDeadBranches>
     <daysToKeep>-1</daysToKeep>
     <numToKeep>-1</numToKeep>
@@ -32,7 +27,7 @@
         <source class="jenkins.scm.impl.SingleSCMSource" plugin="scm-api@2.6.3">
           <id>30d52a09-6ccf-4512-bc5b-cb83160005ac</id>
           <name>Simple</name>
-          <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
+          <scm class="hudson.plugins.git.GitSCM" plugin="git@4.3.0">
             <configVersion>2</configVersion>
             <userRemoteConfigs>
               <hudson.plugins.git.UserRemoteConfig>
@@ -57,7 +52,7 @@
         <source class="jenkins.scm.impl.SingleSCMSource" plugin="scm-api@2.6.3">
           <id>9a4af43b-61e6-4dd0-b21c-61cbb6281e09</id>
           <name>Simple Parallel</name>
-          <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
+          <scm class="hudson.plugins.git.GitSCM" plugin="git@4.3.0">
             <configVersion>2</configVersion>
             <userRemoteConfigs>
               <hudson.plugins.git.UserRemoteConfig>
@@ -82,7 +77,7 @@
         <source class="jenkins.scm.impl.SingleSCMSource" plugin="scm-api@2.6.3">
           <id>b4ff5b8e-ab4c-4309-92ae-47b64ef97a83</id>
           <name>Nested + Cache Builder</name>
-          <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
+          <scm class="hudson.plugins.git.GitSCM" plugin="git@4.3.0">
             <configVersion>2</configVersion>
             <userRemoteConfigs>
               <hudson.plugins.git.UserRemoteConfig>
@@ -107,7 +102,7 @@
         <source class="jenkins.scm.impl.SingleSCMSource" plugin="scm-api@2.6.3">
           <id>b14e16b4-f0e4-412d-854d-eb6cfd2e5498</id>
           <name>Scripted</name>
-          <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
+          <scm class="hudson.plugins.git.GitSCM" plugin="git@4.3.0">
             <configVersion>2</configVersion>
             <userRemoteConfigs>
               <hudson.plugins.git.UserRemoteConfig>
@@ -132,7 +127,7 @@
         <source class="jenkins.scm.impl.SingleSCMSource" plugin="scm-api@2.6.3">
           <id>870082c2-a8fe-4e27-b6a1-59c864cf21da</id>
           <name>Scripted (no def)</name>
-          <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
+          <scm class="hudson.plugins.git.GitSCM" plugin="git@4.3.0">
             <configVersion>2</configVersion>
             <userRemoteConfigs>
               <hudson.plugins.git.UserRemoteConfig>
@@ -157,7 +152,7 @@
         <source class="jenkins.scm.impl.SingleSCMSource" plugin="scm-api@2.6.3">
           <id>3630f80a-12ec-4b7b-80e9-fee60a7f72f0</id>
           <name>Nested + Cache Builder (Failing)</name>
-          <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
+          <scm class="hudson.plugins.git.GitSCM" plugin="git@4.3.0">
             <configVersion>2</configVersion>
             <userRemoteConfigs>
               <hudson.plugins.git.UserRemoteConfig>
