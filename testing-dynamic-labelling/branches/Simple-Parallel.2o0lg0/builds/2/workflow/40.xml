@@ -1,0 +1,31 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.5">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.81">
+    <parentIds>
+      <string>39</string>
+    </parentIds>
+    <id>40</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.81">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>GIT_BRANCH=origin/simple-parallel-example</string>
+            <string>GIT_COMMIT=a2fc87785e5376abcb46d45fa4b82cd5c53543c6</string>
+            <string>GIT_PREVIOUS_COMMIT=ef4b3509beb41d7026d694850acdf7419ec51b2f</string>
+            <string>GIT_PREVIOUS_SUCCESSFUL_COMMIT=ef4b3509beb41d7026d694850acdf7419ec51b2f</string>
+            <string>GIT_URL=https://github.com/veertuinc/jenkins-dynamic-label-example.git</string>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1594216669888</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

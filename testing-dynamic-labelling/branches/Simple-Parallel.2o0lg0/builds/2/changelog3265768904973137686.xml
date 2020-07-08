@@ -1,0 +1,84 @@
+commit a2fc87785e5376abcb46d45fa4b82cd5c53543c6
+tree 551ee8be7786f308e6d5d797710b63034cb70993
+parent afb8f92799d09def4431d4b5e3494d809b2a40dc
+author Nathan Pierce <connarpierce@gmail.com> 2020-07-07 12:22:49 -0400
+committer Nathan Pierce <connarpierce@gmail.com> 2020-07-07 12:22:49 -0400
+
+    credential ID
+
+
+:100644 100644 893b9a3c39d30377c1bf5146f1240e26eab75dcc 397ab36025de9e3d0da11bbdc2f938fe6131c03a M	Jenkinsfile
+commit afb8f92799d09def4431d4b5e3494d809b2a40dc
+tree 91b7e1af2dcacb9477a6e45397a9a1b2be965362
+parent 85386c3a4a7400c715e3cc4158d7813a7f9a6802
+author Nathan Pierce <connarpierce@gmail.com> 2020-07-07 12:19:37 -0400
+committer Nathan Pierce <connarpierce@gmail.com> 2020-07-07 12:19:37 -0400
+
+    credential ID
+
+
+:100644 100644 268b3daa50cccfc15721872db1591f470b2dabb4 893b9a3c39d30377c1bf5146f1240e26eab75dcc M	Jenkinsfile
+commit 85386c3a4a7400c715e3cc4158d7813a7f9a6802
+tree cd068ccfc37b4b89f00a0d2ace4aa4852ce59346
+parent 0f830684c176c90ac8c8e877c47cee6a16374d93
+author Nathan Pierce <connarpierce@gmail.com> 2020-07-07 12:18:45 -0400
+committer Nathan Pierce <connarpierce@gmail.com> 2020-07-07 12:18:45 -0400
+
+    credential ID
+
+
+:100644 100644 f584c0dd93df5d5731423b4a740c025b006b7b98 268b3daa50cccfc15721872db1591f470b2dabb4 M	Jenkinsfile
+commit 0f830684c176c90ac8c8e877c47cee6a16374d93
+tree 622f3b4dd57dca8d459c7471b2174d6b3625cb57
+parent 2ce0a93c64062a1db6b928480a67213b44cdc16b
+author Nathan Pierce <NorseGaud@users.noreply.github.com> 2020-06-25 15:44:55 -0400
+committer GitHub <noreply@github.com> 2020-06-25 15:44:55 -0400
+
+    Update Jenkinsfile
+
+:100644 100644 bb74eea80e3764ba3728e1f8afeab0568ee85bc9 f584c0dd93df5d5731423b4a740c025b006b7b98 M	Jenkinsfile
+commit 2ce0a93c64062a1db6b928480a67213b44cdc16b
+tree b8f80a214504f062abd25f28c785809dad58e0f4
+parent 6dfd531d5421ea40257aee2ce32471d66e8b3be3
+author Nathan Pierce <NorseGaud@users.noreply.github.com> 2020-06-25 15:18:57 -0400
+committer GitHub <noreply@github.com> 2020-06-25 15:18:57 -0400
+
+    Update Jenkinsfile
+
+:100644 100644 f46bf91d2af135f13757200134a6b89c8e2c0dc7 bb74eea80e3764ba3728e1f8afeab0568ee85bc9 M	Jenkinsfile
+commit 6dfd531d5421ea40257aee2ce32471d66e8b3be3
+tree b5e2975acb8003f0bd50469dc8bb75f27f25f5e1
+parent 0ae25579c798f7be025aec45711075519c8a286e
+author Nathan Pierce <NorseGaud@users.noreply.github.com> 2020-06-25 15:14:11 -0400
+committer GitHub <noreply@github.com> 2020-06-25 15:14:11 -0400
+
+    Update Jenkinsfile
+
+:100644 100644 191e1a001a43b74b8c3f092e12a1a52bdbdb51bc f46bf91d2af135f13757200134a6b89c8e2c0dc7 M	Jenkinsfile
+commit 0ae25579c798f7be025aec45711075519c8a286e
+tree 8183beba8f9a1d4fa2a9dada7ac2cdb9eed40c97
+parent b4fe5be4982c7d88702b21172e14336a8b2e21ff
+author Nathan Pierce <NorseGaud@users.noreply.github.com> 2020-06-25 15:13:06 -0400
+committer GitHub <noreply@github.com> 2020-06-25 15:13:06 -0400
+
+    Update Jenkinsfile
+
+:100644 100644 b0ff35d48501ff0827340d7791ef3741aea5e227 191e1a001a43b74b8c3f092e12a1a52bdbdb51bc M	Jenkinsfile
+commit b4fe5be4982c7d88702b21172e14336a8b2e21ff
+tree 6603abfc51ac2b39b371d5c364550342efc555ed
+parent bb3d35a4da4752d26b4945b6d289afb2db975d3d
+author Nathan Pierce <NorseGaud@users.noreply.github.com> 2020-06-25 15:12:31 -0400
+committer GitHub <noreply@github.com> 2020-06-25 15:12:31 -0400
+
+    Update Jenkinsfile
+
+:100644 100644 50fbdaaa1d9526e69124f37898db5a39ca77bf41 b0ff35d48501ff0827340d7791ef3741aea5e227 M	Jenkinsfile
+commit bb3d35a4da4752d26b4945b6d289afb2db975d3d
+tree 12a3690740bb35e442cf54c6c3c87a40c8eed86c
+parent ef4b3509beb41d7026d694850acdf7419ec51b2f
+author Nathan Pierce <NorseGaud@users.noreply.github.com> 2020-06-25 15:11:52 -0400
+committer GitHub <noreply@github.com> 2020-06-25 15:11:52 -0400
+
+    Update Jenkinsfile
+
+:100644 100644 071882653270ff087331251b0e85b0c29ca258e7 50fbdaaa1d9526e69124f37898db5a39ca77bf41 M	Jenkinsfile

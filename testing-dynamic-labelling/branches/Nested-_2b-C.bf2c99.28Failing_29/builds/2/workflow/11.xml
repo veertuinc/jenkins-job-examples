@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.5">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.81">
+    <parentIds>
+      <string>10</string>
+    </parentIds>
+    <id>11</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.81">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>GIT_BRANCH=origin/nested-cache-builder-failing-example</string>
+            <string>GIT_COMMIT=eb9a95d26f2df6681e3abdc430e1a7be3a8a0283</string>
+            <string>GIT_PREVIOUS_COMMIT=564e2026ff3ce1fc19c635c708b12f0ffd0ed3de</string>
+            <string>GIT_URL=https://github.com/veertuinc/jenkins-dynamic-label-example.git</string>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.40">
+      <startTime>1594216811264</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>
