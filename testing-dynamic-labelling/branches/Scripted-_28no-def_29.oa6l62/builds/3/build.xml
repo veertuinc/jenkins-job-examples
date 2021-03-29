@@ -1,0 +1,133 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.40">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <jenkins.branch.BranchIndexingCause plugin="branch-api@2.6.3"/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@2.6.4">
+      <sourceId>870082c2-a8fe-4e27-b6a1-59c864cf21da</sourceId>
+      <revision class="jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl">
+        <head>
+          <name>Scripted (no def)</name>
+        </head>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.7.0">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/scripted-no-def-example</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.7.0">
+              <sha1>5e455ecd64ea0b6ecaaa04b19dc62d8f51d15647</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/scripted-no-def-example</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>3</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/veertuinc/jenkins-dynamic-label-example.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.12">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/veertuinc/jenkins-dynamic-label-example.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.18">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>15</queueId>
+  <timestamp>1617056429148</timestamp>
+  <startTime>1617056429180</startTime>
+  <result>FAILURE</result>
+  <duration>15988</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node(createDynamicAnkaNode(
+  masterVmId: &apos;c0847bc9-5d2d-4dbc-ba6a-240f7ff08032&apos;,
+  tag: &apos;v1&apos;,
+  nameTemplate: &apos;scripted-no-def-example&apos;
+)){
+    stage(&apos;Sleep&apos;) { 
+        sh &apos;sleep 4&apos;
+    }
+    stage(&apos;Do something&apos;) { 
+        sh &apos;echo hello&apos;
+    } 
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>560598100</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>80792200</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>799389100</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>115614800</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>113360500</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>6</iota>
+    <head>1:6</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.7.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/veertuinc/jenkins-dynamic-label-example.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>scripted-no-def-example</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/namic-labelling_Scripted_no_def_@script</workspace>
+      <changelogFile>/var/jenkins_home/jobs/testing-dynamic-labelling/branches/Scripted-_28no-def_29.oa6l62/builds/3/changelog7063037339902021867.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

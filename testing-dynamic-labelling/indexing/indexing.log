@@ -1,18 +1,133 @@
 Started by user unknown or anonymous
-[Thu May 28 20:10:54 UTC 2020] Starting branch indexing...
-no previous build to compare to
-Changes detected: Simple (null → jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@939d1dd2)
+[Mon Mar 29 22:20:19 UTC 2021] Starting branch indexing...
+Using strategy: Default
+[poll] Last Built Revision: Revision 0bc57854d19e639e0d0e2747e870dc6c6f83bae5 (origin/simple-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/simple-example is: 97271f441cae9f41115f7a7ddcf14aab67f9e88d
+Using strategy: Default
+[poll] Last Built Revision: Revision 0bc57854d19e639e0d0e2747e870dc6c6f83bae5 (origin/simple-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/simple-example is: 97271f441cae9f41115f7a7ddcf14aab67f9e88d
+Changes detected: Simple (jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@939d1dd2 → jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@939d1dd2)
 Scheduled build for branch: Simple
-no previous build to compare to
+Using strategy: Default
+[poll] Last Built Revision: Revision a2fc87785e5376abcb46d45fa4b82cd5c53543c6 (origin/simple-parallel-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/simple-parallel-example is: 231981ba90f6627ac3b54a45a49fe8715bafb2f6
+Using strategy: Default
+[poll] Last Built Revision: Revision a2fc87785e5376abcb46d45fa4b82cd5c53543c6 (origin/simple-parallel-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/simple-parallel-example is: 231981ba90f6627ac3b54a45a49fe8715bafb2f6
+Using strategy: Default
+[poll] Last Built Revision: Revision a2fc87785e5376abcb46d45fa4b82cd5c53543c6 (origin/simple-parallel-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/simple-parallel-example is: 231981ba90f6627ac3b54a45a49fe8715bafb2f6
 Changes detected: Simple Parallel (jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@b54cc0b5 → jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@b54cc0b5)
 Scheduled build for branch: Simple Parallel
+Using strategy: Default
+[poll] Last Built Revision: Revision d838ccbed8d698eef86939df4285387ebb9f63e9 (origin/nested-cache-builder-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/nested-cache-builder-example is: 206a5f394d34a641a79c5490496a31c92f8388e5
+Using strategy: Default
+[poll] Last Built Revision: Revision d838ccbed8d698eef86939df4285387ebb9f63e9 (origin/nested-cache-builder-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/nested-cache-builder-example is: 206a5f394d34a641a79c5490496a31c92f8388e5
+Using strategy: Default
+[poll] Last Built Revision: Revision d838ccbed8d698eef86939df4285387ebb9f63e9 (origin/nested-cache-builder-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/nested-cache-builder-example is: 206a5f394d34a641a79c5490496a31c92f8388e5
+Changes detected: Nested + Cache Builder (jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@debb687f → jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@debb687f)
 Scheduled build for branch: Nested + Cache Builder
-no previous build to compare to
-Changes detected: Scripted (null → jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@eb8f3aca)
+Using strategy: Default
+[poll] Last Built Revision: Revision 3d3bd4ed99ce1e13f9e2f8ff7c1abb4ec08f7cd2 (origin/scripted-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/scripted-example is: 2cb4ff84c0217ff5aaaef264eb2f586c940626ad
+Changes detected: Scripted (jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@eb8f3aca → jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@eb8f3aca)
 Scheduled build for branch: Scripted
-no previous build to compare to
-Changes detected: Scripted (no def) (null → jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@48eb7b31)
+Using strategy: Default
+[poll] Last Built Revision: Revision 2ea5ee68a8b706eee6b6ab24c11579a62425873b (origin/scripted-no-def-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/scripted-no-def-example is: 5e455ecd64ea0b6ecaaa04b19dc62d8f51d15647
+Changes detected: Scripted (no def) (jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@48eb7b31 → jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@48eb7b31)
 Scheduled build for branch: Scripted (no def)
+Using strategy: Default
+[poll] Last Built Revision: Revision eb9a95d26f2df6681e3abdc430e1a7be3a8a0283 (origin/nested-cache-builder-failing-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/nested-cache-builder-failing-example is: d8068979a4ae0b9645f11c88eef8df6151707dcf
+Using strategy: Default
+[poll] Last Built Revision: Revision eb9a95d26f2df6681e3abdc430e1a7be3a8a0283 (origin/nested-cache-builder-failing-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/nested-cache-builder-failing-example is: d8068979a4ae0b9645f11c88eef8df6151707dcf
+Using strategy: Default
+[poll] Last Built Revision: Revision eb9a95d26f2df6681e3abdc430e1a7be3a8a0283 (origin/nested-cache-builder-failing-example)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git ls-remote -h -- https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Found 10 remote heads on https://github.com/veertuinc/jenkins-dynamic-label-example.git
+[poll] Latest remote head revision on refs/heads/nested-cache-builder-failing-example is: d8068979a4ae0b9645f11c88eef8df6151707dcf
+Changes detected: Nested + Cache Builder (Failing) (jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@970c728c → jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl@970c728c)
 Scheduled build for branch: Nested + Cache Builder (Failing)
-[Thu May 28 20:10:55 UTC 2020] Finished branch indexing. Indexing took 0.66 sec
+[Mon Mar 29 22:20:23 UTC 2021] Finished branch indexing. Indexing took 4.4 sec
 Finished: SUCCESS

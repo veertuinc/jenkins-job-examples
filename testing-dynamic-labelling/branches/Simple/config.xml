@@ -1,8 +1,8 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@2.39">
+<flow-definition plugin="workflow-job@2.40">
   <actions>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.6.0"/>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.6.0">
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.8.4"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.8.4">
       <jobProperties/>
       <triggers/>
       <parameters/>
@@ -11,13 +11,13 @@
   </actions>
   <keepDependencies>false</keepDependencies>
   <properties>
-    <org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty plugin="workflow-multibranch@2.21">
-      <branch plugin="branch-api@2.5.6">
+    <org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty plugin="workflow-multibranch@2.23">
+      <branch plugin="branch-api@2.6.3">
         <sourceId>30d52a09-6ccf-4512-bc5b-cb83160005ac</sourceId>
-        <head plugin="scm-api@2.6.3">
+        <head plugin="scm-api@2.6.4">
           <name>Simple</name>
         </head>
-        <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
+        <scm class="hudson.plugins.git.GitSCM" plugin="git@4.7.0">
           <configVersion>2</configVersion>
           <userRemoteConfigs>
             <hudson.plugins.git.UserRemoteConfig>
@@ -38,7 +38,7 @@
       </branch>
     </org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty>
   </properties>
-  <definition class="org.jenkinsci.plugins.workflow.multibranch.SCMBinder" plugin="workflow-multibranch@2.21">
+  <definition class="org.jenkinsci.plugins.workflow.multibranch.SCMBinder" plugin="workflow-multibranch@2.23">
     <scriptPath>Jenkinsfile</scriptPath>
   </definition>
   <triggers/>
