@@ -1,0 +1,34 @@
+Branch indexing
+Checking out git https://github.com/veertuinc/jenkins-dynamic-label-example.git into /var/jenkins_home/workspace/abelling_Simple_KeepAliveOnError@script to read Jenkinsfile
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/veertuinc/jenkins-dynamic-label-example.git
+ > git init /var/jenkins_home/workspace/abelling_Simple_KeepAliveOnError@script # timeout=10
+Fetching upstream changes from https://github.com/veertuinc/jenkins-dynamic-label-example.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git fetch --tags --force --progress -- https://github.com/veertuinc/jenkins-dynamic-label-example.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse origin/simple-example-keepalive^{commit} # timeout=10
+Checking out Revision 6656506735ac40204aa5baa0e43c6a21a9f7641a (origin/simple-example-keepalive)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6656506735ac40204aa5baa0e43c6a21a9f7641a # timeout=10
+Commit message: "template update"
+First time build. Skipping changelog.
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4LolM5n3HH/cICWmvrS/9IIvCTamTowAA+YUftoJLYhlAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4OLcJ3KB91PT/dNLxPfZWiTdRTcxGDWPkRNeP3fSG85XAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] createDynamicAnkaNode
+[8mha:////4MwqgSuQwpNYL59KiLhjf2o2XeZiKov6yRjMBcz8YIObAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbGDtjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9bqvXovAAAAA==[0m[Pipeline] End of Pipeline
+com.veertu.ankaMgmtSdk.AnkaNotFoundException: no available cloud with image 937a445f-9061-4e93-9d5a-3df1ec775132
+	at com.veertu.plugin.anka.DynamicSlaveStepExecution.run(DynamicSlaveStepExecution.java:50)
+	at com.veertu.plugin.anka.DynamicSlaveStepExecution.run(DynamicSlaveStepExecution.java:13)
+	at org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Finished: FAILURE

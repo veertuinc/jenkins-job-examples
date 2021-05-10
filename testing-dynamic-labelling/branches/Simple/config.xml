@@ -12,12 +12,12 @@
   <keepDependencies>false</keepDependencies>
   <properties>
     <org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty plugin="workflow-multibranch@2.23">
-      <branch plugin="branch-api@2.6.3">
+      <branch plugin="branch-api@2.6.4">
         <sourceId>30d52a09-6ccf-4512-bc5b-cb83160005ac</sourceId>
         <head plugin="scm-api@2.6.4">
           <name>Simple</name>
         </head>
-        <scm class="hudson.plugins.git.GitSCM" plugin="git@4.7.0">
+        <scm class="hudson.plugins.git.GitSCM" plugin="git@4.7.1">
           <configVersion>2</configVersion>
           <userRemoteConfigs>
             <hudson.plugins.git.UserRemoteConfig>
@@ -30,7 +30,7 @@
             </hudson.plugins.git.BranchSpec>
           </branches>
           <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
-          <submoduleCfg class="list"/>
+          <submoduleCfg class="empty-list"/>
           <extensions/>
         </scm>
         <properties/>

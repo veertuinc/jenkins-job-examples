@@ -13,9 +13,9 @@
   <properties>
     <org.jenkinsci.plugins.workflow.multibranch.BranchJobProperty plugin="workflow-multibranch@2.23">
       <branch plugin="branch-api@2.6.4">
-        <sourceId>9a4af43b-61e6-4dd0-b21c-61cbb6281e09</sourceId>
+        <sourceId>b9fb2375-da37-47ba-9bdd-10f927879dd5</sourceId>
         <head plugin="scm-api@2.6.4">
-          <name>Simple Parallel</name>
+          <name>Simple + KeepAliveOnError</name>
         </head>
         <scm class="hudson.plugins.git.GitSCM" plugin="git@4.7.1">
           <configVersion>2</configVersion>
@@ -26,7 +26,7 @@
           </userRemoteConfigs>
           <branches>
             <hudson.plugins.git.BranchSpec>
-              <name>simple-parallel-example</name>
+              <name>simple-example-keepalive</name>
             </hudson.plugins.git.BranchSpec>
           </branches>
           <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>

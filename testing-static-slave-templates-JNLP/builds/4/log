@@ -1,0 +1,12 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building remotely on [8mha:////4MzQFVgICFhRiNA0D+BqM3LOUUcBQW4ROFGVGzKz0OqnAAAAtx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzFEgZt/eT83ILSktQi/Zz85MQc3cS87ETd5Jz80hTdnMSk1BzdrLycgnh3M6+gAAAdulP54AAAAA==[0mlocal-anka-cloud-label-jnlp_G6JRP (local-anka-cloud-label-jnlp) in workspace /Users/anka/workspace/testing-static-slave-templates-JNLP
+[testing-static-slave-templates-JNLP] $ /bin/sh -xe /var/folders/z1/jhtbj7d562j6fvg8m7l8sfp80000gn/T/jenkins4650339157552843399.sh
++ echo test
+test
++ hostname
+mgmtmanaged-11-3-1-openjdk-1-8-0-292-jenkins-veertu-local-1620657476380559000.local
++ env
++ grep TESTING
+TESTING=true
+Finished: SUCCESS

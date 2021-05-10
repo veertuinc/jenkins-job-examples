@@ -1,0 +1,27 @@
+Started by user unknown or anonymous
+Checking out git https://github.com/veertuinc/jenkins-dynamic-label-example.git into /var/jenkins_home/workspace/testing-dynamic-labelling_Simple@script to read Jenkinsfile
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/testing-dynamic-labelling_Simple@script/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Fetching upstream changes from https://github.com/veertuinc/jenkins-dynamic-label-example.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git fetch --tags --force --progress -- https://github.com/veertuinc/jenkins-dynamic-label-example.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/simple-example^{commit} # timeout=10
+Checking out Revision 97271f441cae9f41115f7a7ddcf14aab67f9e88d (origin/simple-example)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 97271f441cae9f41115f7a7ddcf14aab67f9e88d # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk 97271f441cae9f41115f7a7ddcf14aab67f9e88d # timeout=10
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4LolM5n3HH/cICWmvrS/9IIvCTamTowAA+YUftoJLYhlAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4OLcJ3KB91PT/dNLxPfZWiTdRTcxGDWPkRNeP3fSG85XAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] createDynamicAnkaNode
+[8mha:////4MoJ4uz/0DN1AFJBvvaK+ymHhLGPOs8DHgStNtqLrgZ6AAAApR+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SFSEHfiym3IxhPEJMa04f82SW1XnsireQejBVcODMwMDO/5gjpFOFJ0vLXYeUza8z6MriQ+UeyugSbe0oVrwkTBcmknScaeliopW1jEKlgJWFvUgZJHl2EjWnVXTVDomnOOZTsIqLwZ4AFMFHJWMX/LHGF7G00i/HH+AmDuM7Bd8f7zq9/WVBy+wAAAAA==[0m[Pipeline] node
+Still waiting to schedule task
+‘[8mha:////4Bl/Yqtpw9HBZtBKeOL5wXFmCzxkKdx32p3jT8VcwLHOAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgZ5/eT83ILSktQi/eLM3IKcVN3UikQQHZ9SZuZVog8AwKv0E9QAAAA=[0msimple-example_dv6Jt’ is offline
+Aborted by [8mha:////4F+RQt6uR1yktRIXXVf3SMt+Jno/KSsgOJzWARcgquCiAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL90rzsvPzyPAATbMabwgAAAA==[0munknown
+[8mha:////4NR058vc23CGBa9VpIJDDS4GpwGE5PTvrMpI6lndyHdqAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaGWsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/QfeJvY8vAAAAA==[0m[Pipeline] // node
+[8mha:////4HNYosakW8+Ychf+nzdDG+Jtx2jUvH8Bg97epIA0OumSAAAAox+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbWNgYK1tC4wmQRYQl/7PAult5Iq/mHSRuYuUkk8yb5r3esM4JTpQs9wZ7h1k7HsNo6+ITpf4WaOKerlwTZgqGSzNJ6sx5QUnFwBLWwErAxqAOlB3aAlvh1UO1QaFtLyXV7yigcd0AT2CimotK5Qtzgt197DLhz/NXAHOMBdihdv8BO/k1krwAAAA=[0m[Pipeline] End of Pipeline
+Finished: ABORTED

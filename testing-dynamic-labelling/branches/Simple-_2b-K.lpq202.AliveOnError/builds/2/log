@@ -1,0 +1,65 @@
+Started by user unknown or anonymous
+Checking out git https://github.com/veertuinc/jenkins-dynamic-label-example.git into /var/jenkins_home/workspace/abelling_Simple_KeepAliveOnError@script to read Jenkinsfile
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/abelling_Simple_KeepAliveOnError@script/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+Fetching upstream changes from https://github.com/veertuinc/jenkins-dynamic-label-example.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git fetch --tags --force --progress -- https://github.com/veertuinc/jenkins-dynamic-label-example.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/simple-example-keepalive^{commit} # timeout=10
+Checking out Revision 85196b9182c54525219eaa2225f38627171d9e89 (origin/simple-example-keepalive)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 85196b9182c54525219eaa2225f38627171d9e89 # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk 6656506735ac40204aa5baa0e43c6a21a9f7641a # timeout=10
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4LolM5n3HH/cICWmvrS/9IIvCTamTowAA+YUftoJLYhlAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4OLcJ3KB91PT/dNLxPfZWiTdRTcxGDWPkRNeP3fSG85XAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] createDynamicAnkaNode
+[8mha:////4MoJ4uz/0DN1AFJBvvaK+ymHhLGPOs8DHgStNtqLrgZ6AAAApR+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SFSEHfiym3IxhPEJMa04f82SW1XnsireQejBVcODMwMDO/5gjpFOFJ0vLXYeUza8z6MriQ+UeyugSbe0oVrwkTBcmknScaeliopW1jEKlgJWFvUgZJHl2EjWnVXTVDomnOOZTsIqLwZ4AFMFHJWMX/LHGF7G00i/HH+AmDuM7Bd8f7zq9/WVBy+wAAAAA==[0m[Pipeline] node
+Still waiting to schedule task
+‘[8mha:////4JAkOGS0o6ZmsijxlakY7XSicPfeALeV6UAKcilvPtRhAAAAsh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy5EgZN/eT83ILSktQi/eLM3IKcVN3UikQwnZ2aWpCYk1mWGm+SlGpoqQ8AXful0N4AAAA=[0msimple-example-keepalive_4be19’ is offline
+Running on [8mha:////4JAkOGS0o6ZmsijxlakY7XSicPfeALeV6UAKcilvPtRhAAAAsh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy5EgZN/eT83ILSktQi/eLM3IKcVN3UikQwnZ2aWpCYk1mWGm+SlGpoqQ8AXful0N4AAAA=[0msimple-example-keepalive_4be19 in /Users/anka/workspace/abelling_Simple_KeepAliveOnError
+[8mha:////4D9yRB9AMOK+HIK17bp502ji2F81uILThmlVYE9Ghi3pAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] {
+[8mha:////4Al381rOKRpN232+zLpAhghXxDEV8HqufVUdWVF6EiHgAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] stage
+[8mha:////4GjW0Hskg/z9Z/lE8ZDs+v00iIdD2G1KqB2EhkuX4xYbAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4E8jLGM3YkrPqb8+ok1Ebrzpqn4LOXJIpakD9wLBl/rtAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbamKsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4geKI23CvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Avoid second fetch
+Checking out Revision 85196b9182c54525219eaa2225f38627171d9e89 (origin/simple-example-keepalive)
+Cloning repository https://github.com/veertuinc/jenkins-dynamic-label-example.git
+ > git init /Users/anka/workspace/abelling_Simple_KeepAliveOnError # timeout=10
+Fetching upstream changes from https://github.com/veertuinc/jenkins-dynamic-label-example.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.1 (Apple Git-130)'
+ > git fetch --tags --force --progress -- https://github.com/veertuinc/jenkins-dynamic-label-example.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/veertuinc/jenkins-dynamic-label-example.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/simple-example-keepalive^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 85196b9182c54525219eaa2225f38627171d9e89 # timeout=10
+Commit message: "Update Jenkinsfile"
+[8mha:////4PSTwEOxvFQBgbE8LG9YeGS6YvsSpR58cb7+WLUlfLCWAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbGmOsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/Qdlmg9gvAAAAA==[0m[Pipeline] }
+[8mha:////4HL6mmujDWqfirqn+RQcWjADApxZIyQVRQLFGMY9+i+oAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJoY+NY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId1tBtv8AqUpLPL0AAAA=[0m[Pipeline] // stage
+[8mha:////4ERKZ39oD935zUDhihCHPVMyNsRw6uX/3snkTkyX/KIBAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYSjFFSIitZywwtMbIwT6y7YF5KKF/E1/oAhEhVb7ay0mucLqhThQNGJzmLvMbVeDGF0uYmJYn8JNImOzqIlTBSsUHZSZOxxQUVsYUlRwkrC2mIbKHl0DBvZ6buug0ZXnzjmbS+h9OYGDyhkNrOO/IU5wvY6mkT48/wVwDwwFDuGsmk+x+oN0+j4W8EAAAA=[0m[Pipeline] withEnv
+[8mha:////4PgdekyEKgZ1+YMTKNrgrklKzFj8BncFMV9SMoaQkzo6AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4O4PBK8mogfHaI9vH547ZRMvv25JtcjVxO8EoFUfQFs9AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] stage
+[8mha:////4HoxCc10Wcwxi9Lw8oyXCeTU+6unMYDcoG7Iy4p0QS48AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] { (hello)
+[8mha:////4MWljvoLOEcZqb6p7Q61vUIUSWWHrhSW7J1L8tIz7RA+AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN8W7Eii+AAAA[0m[Pipeline] sh
++ echo hello
+hello
+[8mha:////4KL9xWs7BvQQoUJlueomqcoxPUwChZrnWYM/IB8tZAIzAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEG6D8DvgAAAA==[0m[Pipeline] sh
++ exit 100
+[8mha:////4FBy1pffaoAutW/vVCCWQF4oKA+ifUz8wTfgzKAqZxe3AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJCQKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g0YU4IMvgAAAA==[0m[Pipeline] }
+[8mha:////4Kl04CAQRdzP5uEUV/1Ci/POHsak6Ihtc0r2UBMnOH0oAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRIOEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQFudLBjvgAAAA==[0m[Pipeline] // stage
+[8mha:////4EK1xZrdrdx6wO96JiYy+WEnm2oPBGQ0Npsely9xHPEkAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi6BCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7ndf2r3Bl2X69++AAAA[0m[Pipeline] }
+[8mha:////4K94rk4xPKIFHu6GYHeeCeyLHVuTJADlNjeTeqgnMJv1AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIhtIgqrZWGF5j4ME6sO2M7JBUv4mv8AYtIVGyx2tlmXm9YxwAnDkb0SIOl2Fnh3WjyEhOH4ep4Ej1fRMcU2aFocWpZY7NgywlhSVHCSsIGqXMcLZkEW9mrh6qcIlOdU8jfUUJp9R2eUMhsTiqkL8wBdrdRR6af568AZu8TlId9rrr+ALKNBVC+AAAA[0m[Pipeline] // withEnv
+[8mha:////4GUh90dwVwGsCqJTjT8wt5PCoUXqD6OPTfrot+rBnQvZAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRSFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPDUC2Hr0AAAA=[0m[Pipeline] }
+[8mha:////4Acpd4PeQYdTxJmFuofUxfJXJN+wuBTMZ0/iIflx7DWLAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkxM04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8ASwoRLr0AAAA=[0m[Pipeline] // node
+[8mha:////4MgvXbUdNIrtKvVeGi36QJP+AWdZZTGCeKXaXZyZ9y4SAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkOBon14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmvhfk5V6QlR/OhhL6vQAAAA==[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 100
+Finished: FAILURE
