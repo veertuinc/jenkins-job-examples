@@ -16,7 +16,7 @@
     <hudson.tasks.Shell>
       <command>echo test;
 hostname;
-env | grep TESTING;</command>
+env; sleep 120;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
