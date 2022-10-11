@@ -1,0 +1,68 @@
+Started by user unknown or anonymous
+Checking out git https://github.com/veertuinc/jenkins-dynamic-label-examples-intel.git into /var/jenkins_home/workspace/g-dynamic-labelling-intel_Simple@script/b239151becedfe088b98bf443981b8fd1ec2862527b3680180e523fe6d37ebad to read Jenkinsfile
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/veertuinc/jenkins-dynamic-label-examples-intel.git
+ > git init /var/jenkins_home/workspace/g-dynamic-labelling-intel_Simple@script/b239151becedfe088b98bf443981b8fd1ec2862527b3680180e523fe6d37ebad # timeout=10
+Fetching upstream changes from https://github.com/veertuinc/jenkins-dynamic-label-examples-intel.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/veertuinc/jenkins-dynamic-label-examples-intel.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/veertuinc/jenkins-dynamic-label-examples-intel.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse origin/simple-example^{commit} # timeout=10
+Checking out Revision c525950ee2f5ff9194c36fea2133f29423ae44d6 (origin/simple-example)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c525950ee2f5ff9194c36fea2133f29423ae44d6 # timeout=10
+Commit message: "Update Jenkinsfile"
+First time build. Skipping changelog.
+[8mha:////4HDCYPHoKzqWzk3bqFIVpYUJU4mM6eSVI7EcLExx6EkaAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4EEubbU/9CJ1/QsnQQtSqYxfAc033FqfWvMUvGO7qqymAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] createDynamicAnkaNode
+[8mha:////4GzJ+JyXmZFdjyF8iwVocVBm2JeRan3bjdTRZQ946sy6AAAApR+LCAAAAAAAAP9tjUEKwjAURH8qXbh16SFSEHfiym3IxhPEJMa04f82SW1XnsireQejBVcODMwMDO/5gjpFOFJ0vLXYeUza8z6MriQ+UeyugSbe0oVrwkTBcmknScaeliopW1jEKlgJWFvUgZJHl2EjWnVXTVDomnOOZTsIqLwZ4AFMFHJWMX/LHGF7G00i/HH+AmDuM7Bd8f7zq9/WVBy+wAAAAA==[0m[Pipeline] node
+Still waiting to schedule task
+‘[8mha:////4AEzal2a3ZDiNPF3JY3WsBGuluMkpKck8j6Ctq4AMvWmAAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgZl/eT83ILSktQi/eLM3IKcVFUjl9SKRDDL1C0iJditSB8AnimHH9gAAAA=[0msimple-example_XdSFr’ is offline
+Running on [8mha:////4AEzal2a3ZDiNPF3JY3WsBGuluMkpKck8j6Ctq4AMvWmAAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgZl/eT83ILSktQi/eLM3IKcVFUjl9SKRDDL1C0iJditSB8AnimHH9gAAAA=[0msimple-example_XdSFr in /Users/anka/workspace/g-dynamic-labelling-intel_Simple
+[8mha:////4Dm32mIu+WszyxpkXPrXfrM1mfqQTdwhvn69e6AMN+E6AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] {
+[8mha:////4FN/rn79JrLIDyW1MlqugvX+J08IyimxW7M+XMdjRnrrAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] stage
+[8mha:////4N0hpA03GfHgN6juKcOQnTDxXKPQw91yyOg8ongkXYtUAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4Bep3hKXUWgeC7xr5zwipCKktIXjq57y0l7+NVrjU+K+AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbamKsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4geKI23CvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/veertuinc/jenkins-dynamic-label-examples-intel.git
+ > git init /Users/anka/workspace/g-dynamic-labelling-intel_Simple # timeout=10
+Fetching upstream changes from https://github.com/veertuinc/jenkins-dynamic-label-examples-intel.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.32.1 (Apple Git-133)'
+ > git fetch --tags --force --progress -- https://github.com/veertuinc/jenkins-dynamic-label-examples-intel.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/veertuinc/jenkins-dynamic-label-examples-intel.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+Checking out Revision c525950ee2f5ff9194c36fea2133f29423ae44d6 (origin/simple-example)
+Commit message: "Update Jenkinsfile"
+[8mha:////4NzGngb3HPKNUv27WMzkOf96jFWLIlV0u7PZy+sro3yLAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbGmOsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzDEWYIfa/Qdlmg9gvAAAAA==[0m[Pipeline] }
+ > git rev-parse origin/simple-example^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c525950ee2f5ff9194c36fea2133f29423ae44d6 # timeout=10
+[8mha:////4IAgdD1S0v1SP+w4mKxN+Vp0lPMYqlZg3ZWPnlVPTb7qAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJoY+NY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId1tBtv8AqUpLPL0AAAA=[0m[Pipeline] // stage
+[8mha:////4BKVRlCWO3fwFLdeP1On38RKP9zeIObad24ilF+j9e47AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYSjFFSIitZywwtMbIwT6y7YF5KKF/E1/oAhEhVb7ay0mucLqhThQNGJzmLvMbVeDGF0uYmJYn8JNImOzqIlTBSsUHZSZOxxQUVsYUlRwkrC2mIbKHl0DBvZ6buug0ZXnzjmbS+h9OYGDyhkNrOO/IU5wvY6mkT48/wVwDwwFDuGsmk+x+oN0+j4W8EAAAA=[0m[Pipeline] withEnv
+[8mha:////4IihbaS/E1uVNA9BQGMyKhNWRVfB/YULdgSwdRFdDPxYAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] {
+[8mha:////4PZHN5FU8U31UMjEfQ7t/Uz8bVcma4AaJKbH2YFr8X1uAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] stage
+[8mha:////4Jw+z4vzDGtiiRw8tze/OG8oE2g24pnJqXoEE1HbGUy+AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] { (hello)
+[8mha:////4JQojPeiBYV1G5jsco8JMeMVSQj2wm4IFoTKrKgU6NT6AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN8W7Eii+AAAA[0m[Pipeline] sh
++ echo hello
+hello
++ sleep 120
+Sending interrupt signal to process
+/Users/anka/workspace/g-dynamic-labelling-intel_Simple@tmp/durable-ef761d41/script.sh: line 1:   616 Terminated: 15          sleep 120
+script returned exit code 143
+[8mha:////4JBCyDeBjEKk8g7/eHl8K9m09RWaEkBGmFeI4/DHF2TlAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQG9gN7HvgAAAA==[0m[Pipeline] }
+[8mha:////4HVD7kniZTAlrcSpOydRh93GVI1vTEK6evj2MhBZbXTSAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiREGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQG7xuaSvgAAAA==[0m[Pipeline] // stage
+[8mha:////4BQHt+lpVhG0HUvsPbtdA0FcXs2kkKH4p5cX/ko+7tV6AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiqJAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N/hEtxS+AAAA[0m[Pipeline] }
+[8mha:////4JXWb34Uyhug5CWi+CT6azn9mRr5CP5EpoBC5BtrnAE6AAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyKR3Hypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzN4nqNv9p9o358biRr4AAAA=[0m[Pipeline] // withEnv
+[8mha:////4ArTgNR1h5zxQOZh8UTmkAxZGxYjRGpm3M5qcD4ZuiHyAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBSFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPvWnWI70AAAA=[0m[Pipeline] }
+[8mha:////4FZWBkzmmP97iNE7FHeE+fmuBxTm1tGWdYerRGHT3IVjAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRiA5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8Bm3Cxab0AAAA=[0m[Pipeline] // node
+[8mha:////4LwDuDAdkMctiiPIXYtZ1ALUMFlkzUcsDWd2LfyvZO/OAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkrMbJtWHxCyrUWmjeg/YhTH6Rv+Y/SCRx8k73nOW83timiBNHp1pLnadUe9WH0S1PTRy7W+BJtXxVNVPiYFVlp4obe16xYrFYl+XYaOws1YGTJyfY69Y8TBEMueIicXFHjdw3A57I9FIWE+ULc8ThPjaJ6df5G8Dc94K8LAVZ+QF+r3LHvQAAAA==[0m[Pipeline] End of Pipeline
+Finished: ABORTED

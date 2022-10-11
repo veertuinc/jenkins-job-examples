@@ -1,0 +1,33 @@
+Started by user unknown or anonymous
+Checking out git https://github.com/veertuinc/jenkins-dynamic-label-examples-arm.git into /var/jenkins_home/workspace/c-labelling-arm_Scripted_no_def_@script/d92e6943c4b4f1f92be43c2449143b3914e091f5bd5154edd2e58955bc39767a to read Jenkinsfile
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/veertuinc/jenkins-dynamic-label-examples-arm.git
+ > git init /var/jenkins_home/workspace/c-labelling-arm_Scripted_no_def_@script/d92e6943c4b4f1f92be43c2449143b3914e091f5bd5154edd2e58955bc39767a # timeout=10
+Fetching upstream changes from https://github.com/veertuinc/jenkins-dynamic-label-examples-arm.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/veertuinc/jenkins-dynamic-label-examples-arm.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/veertuinc/jenkins-dynamic-label-examples-arm.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse origin/scripted-no-def-example^{commit} # timeout=10
+Checking out Revision 20e87af68de512ef7f3ad4ce7654e3511cdf5bc3 (origin/scripted-no-def-example)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 20e87af68de512ef7f3ad4ce7654e3511cdf5bc3 # timeout=10
+Commit message: "9bf0318f-5c58-4142-b544-cf743a087a41"
+First time build. Skipping changelog.
+[8mha:////4HDCYPHoKzqWzk3bqFIVpYUJU4mM6eSVI7EcLExx6EkaAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4EEubbU/9CJ1/QsnQQtSqYxfAc033FqfWvMUvGO7qqymAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbaGmsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfya1RxvAAAAA==[0m[Pipeline] createDynamicAnkaNode
+[8mha:////4LSB7sadVRVkNqaqUN4IdxRklpfTpHTx9SFrJkrfvVFoAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQSbGDtjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9bqvXovAAAAA==[0m[Pipeline] End of Pipeline
+com.veertu.ankaMgmtSdk.AnkaNotFoundException: no available cloud with image 9bf0318f-5c58-4142-b544-cf743a087a41
+	at com.veertu.plugin.anka.DynamicSlaveStepExecution.run(DynamicSlaveStepExecution.java:50)
+	at com.veertu.plugin.anka.DynamicSlaveStepExecution.run(DynamicSlaveStepExecution.java:13)
+	at org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Finished: FAILURE

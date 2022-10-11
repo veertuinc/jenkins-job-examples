@@ -1,0 +1,29 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@838.va_3a_087b_4055b">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2802.v5ea_628154b_c2">
+    <parentIds>
+      <string>3</string>
+    </parentIds>
+    <id>4</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.ExecutorStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2802.v5ea_628154b_c2">
+      <arguments>
+        <entry>
+          <string>label</string>
+          <string>4d796160-39c2-4fd3-931e-fbec93b1686d</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1198.v4596ea_5329b_6">
+      <startTime>1665512465322</startTime>
+    </wf.a.TimingAction>
+    <org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl plugin="workflow-durable-task-step@1199.v02b_9244f8064">
+      <id>16</id>
+    </org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl>
+  </actions>
+</Tag>

@@ -1,0 +1,354 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1239.v71b_b_a_124a_725">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <jenkins.branch.BranchIndexingCause plugin="branch-api@2.1046.v0ca_37783ecc5"/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@621.vda_a_b_055e58f7">
+      <sourceId>3630f80a-12ec-4b7b-80e9-fee60a7f72f0</sourceId>
+      <revision class="jenkins.scm.impl.SingleSCMSource$SCMRevisionImpl">
+        <head>
+          <name>Nested + Cache Builder (Failing)</name>
+        </head>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.12.1">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/nested-cache-builder-failing-example</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.12.1">
+              <sha1>d8068979a4ae0b9645f11c88eef8df6151707dcf</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/nested-cache-builder-failing-example</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/veertuinc/jenkins-dynamic-label-examples-intel.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@400.v6b_89a_1317c9a_">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/veertuinc/jenkins-dynamic-label-examples-intel.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@612.v84da_9c54906d">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2114.v2654ca_721309">
+      <stagesUUID>217f5f59-ac9c-4116-9283-e2e493643067</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2114.v2654ca_721309">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>command-in-AGENT_LABEL-vm</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">uname -a</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>nested-vm-stages</name>
+                <stages>
+                  <stages>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <name>launch-nested-vm</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                              <name>script</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>scriptBlock</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">NESTED_LABEL = createDynamicAnkaNode(
+                launchMethod: &apos;jnlp&apos;, 
+                masterVmId: &apos;c0847bc9-5d2d-4dbc-ba6a-240f7ff08032&apos;,
+                tag: &apos;v1&apos;,
+                nameTemplate: &apos;nested-failing-example-nested&apos;,
+                saveImage: true, 
+                suspend: true,
+                deleteLatest: true // Dangerous: only use if the Template isn&apos;t holding other project tags.
+              )</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <agent>
+                        <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$GStringValue">
+                          <value class="string">&quot;${NESTED_LABEL}&quot;</value>
+                        </variables>
+                        <agentType>
+                          <key>label</key>
+                        </agentType>
+                      </agent>
+                      <name>run-on-NESTED_LABEL-vm</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                              <name>catchError</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>buildResult</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">FAILURE</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>stageResult</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">FAILURE</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                              <children>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                  <name>sh</name>
+                                  <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                    <arguments class="linked-hash-map">
+                                      <entry>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <key>script</key>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                          <value class="string">uname -x</value>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      </entry>
+                                    </arguments>
+                                  </args>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              </children>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <name>check-generated-tag-from-nested-vm</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                              <name>script</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>scriptBlock</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">def getPushResult = ankaGetSaveImageResult( shouldFail: true, timeoutMinutes: 120 )
+              echo &quot;ankaGetSaveImageResult Returned: $getPushResult&quot;</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                  </stages>
+                  <uuid>d93f4444-1659-4c56-b8a1-88241d3a42fa</uuid>
+                </stages>
+                <branches/>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>217f5f59-ac9c-4116-9283-e2e493643067</uuid>
+          </stages>
+          <agent>
+            <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$GStringValue">
+              <value class="string">&quot;${AGENT_LABEL}&quot;</value>
+            </variables>
+            <agentType>
+              <key>label</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <jenkins.model.InterruptedBuildAction>
+      <causes>
+        <org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueTaskCancelled plugin="workflow-durable-task-step@1199.v02b_9244f8064"/>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+  </actions>
+  <queueId>10</queueId>
+  <timestamp>1665512459746</timestamp>
+  <startTime>1665512459776</startTime>
+  <result>ABORTED</result>
+  <duration>39450</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>ABORTED</result>
+    <script>def AGENT_LABEL = createDynamicAnkaNode(
+  masterVmId: &apos;c0847bc9-5d2d-4dbc-ba6a-240f7ff08032&apos;,
+  tag: &apos;v1&apos;,
+  launchMethod: &apos;ssh&apos;,
+  credentialsId: &apos;anka&apos;,
+  nameTemplate: &apos;nested-cache-builder-failing-example&apos;
+)
+def NESTED_LABEL = &apos;&apos;
+
+pipeline {
+  agent {
+    label &quot;${AGENT_LABEL}&quot;
+  }
+  stages {
+    stage(&quot;command-in-AGENT_LABEL-vm&quot;) {
+      steps {
+        sh &quot;uname -a&quot; // Run within the first AGENT_LABEL VM instance
+      }
+    }
+    stage(&quot;nested-vm-stages&quot;) {
+      stages {
+        stage(&quot;launch-nested-vm&quot;) { // Creates a second VM instance which will, after job completion, push to the Registry.
+          steps {
+            script {
+              NESTED_LABEL = createDynamicAnkaNode(
+                launchMethod: &apos;jnlp&apos;, 
+                masterVmId: &apos;c0847bc9-5d2d-4dbc-ba6a-240f7ff08032&apos;,
+                tag: &apos;v1&apos;,
+                nameTemplate: &apos;nested-failing-example-nested&apos;,
+                saveImage: true, 
+                suspend: true,
+                deleteLatest: true // Dangerous: only use if the Template isn&apos;t holding other project tags.
+              )
+            }
+          }
+        }
+        stage(&quot;run-on-NESTED_LABEL-vm&quot;) {
+          agent { label &quot;${NESTED_LABEL}&quot; }
+          steps {
+            // If buildResults == &apos;FAILURE&apos;, Anka will not push the NESTED_LABEL VM. Example:
+            catchError(buildResult: &apos;FAILURE&apos;, stageResult: &apos;FAILURE&apos;) {
+              sh &apos;uname -x&apos;
+            }
+          }
+        }
+        stage(&quot;check-generated-tag-from-nested-vm&quot;) {
+          steps {
+            script {
+              def getPushResult = ankaGetSaveImageResult( shouldFail: true, timeoutMinutes: 120 )
+              echo &quot;ankaGetSaveImageResult Returned: $getPushResult&quot;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>549673480</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>340160370</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>3475593127</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>427233680</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>2066840713</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>6</iota>
+    <head>1:6</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.12.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/veertuinc/jenkins-dynamic-label-examples-intel.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>nested-cache-builder-failing-example</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions/>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/rm_Nested_Cache_Builder_Failing_@script/b239151becedfe088b98bf443981b8fd1ec2862527b3680180e523fe6d37ebad</workspace>
+      <changelogFile>/var/jenkins_home/jobs/testing-dynamic-labelling-arm/branches/Nested-_2b-C.bf2c99.28Failing_29/builds/1/changelog15528008793147101900.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>
