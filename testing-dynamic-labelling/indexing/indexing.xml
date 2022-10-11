@@ -1,5 +1,5 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<jenkins.branch.MultiBranchProject_-BranchIndexing plugin="branch-api@2.6.4">
+<jenkins.branch.MultiBranchProject_-BranchIndexing plugin="branch-api@2.1046.v0ca_37783ecc5">
   <actions/>
   <result>
     <name>SUCCESS</name>
@@ -8,8 +8,8 @@
     <completeBuild>true</completeBuild>
   </result>
   <durations>
-    <long>3398</long>
+    <long>6229</long>
   </durations>
-  <timestamp>1620657761030</timestamp>
-  <duration>3398</duration>
+  <timestamp>1665503392894</timestamp>
+  <duration>6229</duration>
 </jenkins.branch.MultiBranchProject_-BranchIndexing>
