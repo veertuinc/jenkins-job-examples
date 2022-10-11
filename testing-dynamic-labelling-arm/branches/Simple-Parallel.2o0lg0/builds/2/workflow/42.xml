@@ -1,0 +1,26 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@838.va_3a_087b_4055b">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2802.v5ea_628154b_c2">
+    <parentIds>
+      <string>41</string>
+    </parentIds>
+    <id>42</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EchoStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2802.v5ea_628154b_c2">
+      <arguments>
+        <entry>
+          <string>message</string>
+          <string>builder2 - command1</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1198.v4596ea_5329b_6">
+      <startTime>1665514143498</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>
